@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *hourHand;
 @property (nonatomic, weak) IBOutlet UIImageView *minuteHand;

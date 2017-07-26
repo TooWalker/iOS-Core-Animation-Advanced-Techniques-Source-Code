@@ -23,12 +23,14 @@
     //create timing function
     CAMediaTimingFunction *function =
         [CAMediaTimingFunction functionWithName:
-         kCAMediaTimingFunctionEaseOut];
+         kCAMediaTimingFunctionEaseInEaseOut];
     
     //get control points
-    CGPoint controlPoint1, controlPoint2;
-    [function getControlPointAtIndex:1 values:(float *)&controlPoint1];
-    [function getControlPointAtIndex:2 values:(float *)&controlPoint2];
+    float cp1[2], cp2[2];
+    [function getControlPointAtIndex:1 values:cp1];
+    [function getControlPointAtIndex:2 values:cp2];
+    CGPoint controlPoint1 = CGPointMake(cp1[0], cp1[1]);
+    CGPoint controlPoint2 = CGPointMake(cp2[0], cp2[1]);
     
     //create curve
     UIBezierPath *path = [[UIBezierPath alloc] init];
