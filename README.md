@@ -2,7 +2,7 @@
 
 ![Book Cover](https://images-na.ssl-images-amazon.com/images/I/51hrk6q-DRL.jpg)
 
-Sample code for Nick Lockwood's iOS Core Animation: Advanced Techniques book. 
+Sample code for Nick Lockwood's *iOS Core Animation: Advanced Techniques* book. 
 
 Available and more information:
 
